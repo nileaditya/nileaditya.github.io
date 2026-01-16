@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Nile | Engineering Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Terminal Boot Screen -->
+    <div id="boot-screen">
+        <div class="terminal-text">
+            <p>[SYSTEM] Initializing engineering environment...</p>
+            <p>[KERNEL] Loading security modules... <span class="success">OK</span></p>
+            <p>[PYTHON] Runtime v3.11 activated... <span class="success">OK</span></p>
+            <p>[AI] Neural interfaces online... <span class="success">OK</span></p>
+            <p>[NETWORK] Establishing secure connection... <span class="success">OK</span></p>
+            <p class="boot-complete">[READY] System operational. Welcome, visitor.</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">ADITYA_NILE</span>
+                <span class="logo-bracket">]</span>
+                <span class="cursor-blink">_</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-section="home">Home</a></li>
+                <li><a href="#lab" data-section="lab">Lab</a></li>
+                <li><a href="#systems" data-section="systems">Systems</a></li>
+                <li><a href="#experiments" data-section="experiments">Experiments</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <h1 class="glitch" data-text="ENGINEERING LAB">ENGINEERING LAB</h1>
+            <p class="subtitle">Where Python, Security, and AI Converge</p>
+            <div class="cta-buttons">
+                <button class="btn-primary" onclick="scrollToSection('lab')">
+                    <span>Enter Lab</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </button>
+                <button class="btn-secondary" onclick="scrollToSection('systems')">
+                    <span>View Systems</span>
+                </button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-card">
+                <div class="stat-value" data-target="1000">0</div>
+                <div class="stat-label">Lines of Code</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" data-target="15">0</div>
+                <div class="stat-label">Active Projects</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" data-target="100">0</div>
+                <div class="stat-label">Security Audits</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lab Section -->
+    <section id="lab" class="lab-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">$</span> cat lab.md
+            </h2>
+            <div class="lab-grid">
+                <div class="lab-card">
+                    <div class="card-icon">🐍</div>
+                    <h3>Python Engineering</h3>
+                    <p>Building scalable, maintainable applications with clean architecture principles and test-driven development.</p>
+                    <ul class="tech-stack">
+                        <li>FastAPI</li>
+                        <li>asyncio</li>
+                        <li>pytest</li>
+                        <li>SQLAlchemy</li>
+                    </ul>
+                </div>
+                <div class="lab-card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Cryptographic implementations, vulnerability assessments, and secure system design from the ground up.</p>
+                    <ul class="tech-stack">
+                        <li>Cryptography</li>
+                        <li>OWASP Top 10</li>
+                        <li>Penetration Testing</li>
+                        <li>Secure Coding</li>
+                    </ul>
+                </div>
+                <div class="lab-card">
+                    <div class="card-icon">🤖</div>
+                    <h3>AI Systems</h3>
+                    <p>Machine learning pipelines, computer vision, and AI-assisted development tools that enhance engineering workflows.</p>
+                    <ul class="tech-stack">
+                        <li>scikit-learn</li>
+                        <li>OpenCV</li>
+                        <li>TensorFlow</li>
+                        <li>MLOps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Systems Architecture -->
+    <section id="systems" class="systems-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">$</span> tree systems/
+            </h2>
+            <div class="systems-display">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="btn-close"></span>
+                            <span class="btn-minimize"></span>
+                            <span class="btn-maximize"></span>
+                        </div>
+                        <div class="terminal-title">architecture.py</div>
+                    </div>
+                    <div class="terminal-body">
+                        <pre id="code-display"></pre>
+                    </div>
+                </div>
+                <div class="architecture-diagram">
+                    <svg width="100%" height="400" viewBox="0 0 800 400">
+                        <!-- Architecture visualization will be rendered here -->
+                        <text x="400" y="200" text-anchor="middle" fill="#00f5ff" font-size="24">
+                            Interactive System Architecture
+                        </text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiments -->
+    <section id="experiments" class="experiments-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">$</span> ls experiments/
+            </h2>
+            <div class="experiments-grid">
+                <div class="experiment-card" data-status="active">
+                    <div class="status-indicator"></div>
+                    <h3>Steganography Suite</h3>
+                    <p>Image-based information hiding using LSB and frequency domain techniques</p>
+                    <div class="experiment-meta">
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">Cryptography</span>
+                    </div>
+                </div>
+                <div class="experiment-card" data-status="active">
+                    <div class="status-indicator"></div>
+                    <h3>Security Scanner</h3>
+                    <p>Automated vulnerability assessment tool for web applications</p>
+                    <div class="experiment-meta">
+                        <span class="tag">Security</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+                <div class="experiment-card" data-status="planning">
+                    <div class="status-indicator"></div>
+                    <h3>AI Code Analyzer</h3>
+                    <p>ML-powered code review and architecture suggestion system</p>
+                    <div class="experiment-meta">
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-bracket">$</span> connect.sh
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Build Something</h3>
+                    <p>Interested in collaborating on open-source projects, discussing system architecture, or exploring AI-assisted development?</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/nileaditya" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="mailto:your.email@example.com" class="contact-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="terminal-contact">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn-close"></span>
+                                <span class="btn-minimize"></span>
+                                <span class="btn-maximize"></span>
+                            </div>
+                            <div class="terminal-title">message.py</div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre class="terminal-output">
+>>> import contact
+>>> contact.send_message(
+...     to="nileaditya",
+...     subject="Collaboration",
+...     body="Let's build something great"
+... )
+<span class="success">Message queued for delivery ✓</span>
+>>>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aditya Nile | Built with Python, discipline, and creative constraints</p>
+            <p class="footer-note">This site respects your privacy. No tracking, no cookies, no nonsense.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
